@@ -4,14 +4,17 @@
 </head>
 <body>
     <div class="corpo">
-        <h1>Primeiro Acesso</h1>
-        <form id="formCadastro" action="/cadastro" method="post">
+        <h3>Primeiro Acesso</h2>
+        <form id="formCadastro" action="/api/auth/cadastro" method="post">
             <label for="username"></label><br>
-            <input type="text" id="username" name="usuario" placeholder="Usuario"><br>
+            <input type="text" id="username" name="nomeusuario" placeholder="Usuario"><br>
             <label type="email"></label><br>
-            <input type="email" id="email" name="email" required><br>
+            <input type="email" id="email" name="email" placeholder="E-mail"><br>
             <label for="pwd"></label><br>
-            <input type="password" id="pwd" name="senha" placeholder="senha"><br><br>
+            <input type="password" id="pwd" name="senha" placeholder="Senha"><br><br>
             <input type="submit" value="Cadastrar">
         </form>
     </div>
+    <script src="/script.js"></script>
+</body>
+</html>
